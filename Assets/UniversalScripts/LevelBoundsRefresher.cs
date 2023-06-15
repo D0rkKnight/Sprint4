@@ -8,6 +8,9 @@ public class LevelBoundsRefresher : MonoBehaviour
 
     public void Refresh()
     {
+        levelManager = FindObjectOfType<LevelManager>();
+
+
         // Check if there is a 2d Box Collider. If not, add one.
         BoxCollider boxCollider = GetComponent<BoxCollider>();
 
@@ -26,8 +29,6 @@ public class LevelBoundsRefresher : MonoBehaviour
 
     public void Reset()
     {
-        levelManager = FindObjectOfType<LevelManager>();
-
         Refresh();
     }
 

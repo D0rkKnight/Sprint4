@@ -1,6 +1,12 @@
 using System;
 using System.Text.RegularExpressions;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+using UnityEngine;
+
 public class Utils
 {
     public static string IncrementSubscript(string input)
@@ -29,5 +35,16 @@ public class Utils
             // If no number found, return the original string
             return input;
         }
+    }
+
+
+
+    public static Vector3 SnapVec3(Vector3 vec, float snapInc)
+    {
+        vec.x = (float)Math.Round(vec.x);
+        vec.y = (float)Math.Round(vec.y);
+        vec.z = (float)Math.Round(vec.z);
+
+        return vec;
     }
 }
