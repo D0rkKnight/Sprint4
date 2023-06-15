@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 45c4088fcff2fbf43bc2a1e0738e4ff9
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/LoadingScreen.unity
+    guid: 888394d52616e5e42b3b54c3f2bbd3eb
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreen.unity
+    guid: d89b77a7a68c1844280c6ff2e49f95b8
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreenBigText.unity
+    guid: dedb2bed56a01c241be42c5c5b5748ca
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreenFastFade.unity
+    guid: 8101c376367d6e44f84e602722e5ac10
+  - enabled: 1
+    path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreenSimple.unity
+    guid: 945e5b97212e8e74ebcd35bddde3970c
+  - enabled: 1
+    path: Assets/Scenes/FinishedTemplate.unity
+    guid: c6fb7ea4d90cc7946ab0816189f46c6e
+  - enabled: 1
+    path: Assets/Scenes/Legacy/Level1.unity
+    guid: e12003b2a2b23b545b2999edc5ec2b03
+  - enabled: 1
+    path: Assets/Scenes/Legacy/Level2.unity
+    guid: 34b7f1f39f809db4ab25d2f3a7755440
+  - enabled: 1
+    path: Assets/Scenes/Legacy/Level3.unity
+    guid: ee231909c52b02943bdaf9b9a1326a8a
+  - enabled: 1
+    path: Assets/Scenes/Legacy/Level4.unity
+    guid: fbc638a8207806e489c1242a12913ee1
+  - enabled: 1
+    path: Assets/Scenes/Legacy/Level5.unity
+    guid: 1959cf146d4030b48b786a5c53ce3ce9
+  - enabled: 1
+    path: Assets/Scenes/Legacy/Finished.unity
+    guid: 8b2446ce0dde8d441bdbc0506e708db1
+  m_configObjects: {}

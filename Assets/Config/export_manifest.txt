@@ -1,0 +1,12 @@
+Concepts
+Config
+Editor
+Prefabs
+Scenes
+Sprites
+Tiles
+Tools
+UniversalScripts
+
+# Asset libs
+AssetPacks

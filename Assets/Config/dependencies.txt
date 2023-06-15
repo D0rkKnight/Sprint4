@@ -1,0 +1,9 @@
+Package Exporter: (not in use)
+https://github.com/Varneon/Unitypackage-Exporter.git?path=/Packages/com.varneon.package-exporter
+
+CorgiEngine (ext)
+MMData (ext, bundled with CorgiEngine)
+LeanTween (ext)
+TMPro (ext)
+
+Install order: CorgiEngine -> The rest -> Config
