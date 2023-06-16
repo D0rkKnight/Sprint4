@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEditor.SceneManagement;
 #endif
 
 using UnityEngine;
@@ -46,5 +47,21 @@ public class Utils
         vec.z = (float)Math.Round(vec.z);
 
         return vec;
+    }
+
+    public static void markDirty(GameObject go)
+    {
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(go);
+        EditorSceneManager.MarkSceneDirty(go.scene);
+#endif
+    }
+
+    public static void markDirty(Component comp)
+    {
+#if UNITY_EDITOR
+        EditorUtility.SetDirty(comp);
+        EditorSceneManager.MarkSceneDirty(comp.gameObject.scene);
+#endif
     }
 }
