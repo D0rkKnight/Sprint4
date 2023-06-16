@@ -7,6 +7,7 @@ using UnityEditor.SceneManagement;
 #endif
 
 using UnityEngine;
+using MoreMountains.CorgiEngine;
 
 public class Utils
 {
@@ -63,5 +64,21 @@ public class Utils
         EditorUtility.SetDirty(comp);
         EditorSceneManager.MarkSceneDirty(comp.gameObject.scene);
 #endif
+    }
+
+    public static Character getPlayerByID(string id)
+    {
+
+        Character[] chars = GameObject.FindObjectsOfType(typeof(Character)) as Character[];
+
+        foreach (Character c in chars)
+        {
+            if (c.PlayerID == id)
+            {
+                return c;
+            }
+        }
+
+        return null;
     }
 }

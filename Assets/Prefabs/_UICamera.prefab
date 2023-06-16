@@ -5827,21 +5827,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4540173929198755796}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1541904780966469056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4541865122050319278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ae4217f58d51e74cb3e964682685e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xp: 0
-  nextXp: 100
-  level: 0
 --- !u!114 &1742646269189870153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5854,7 +5839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2fbb95b5b2a4824a9918ff9b0da1861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exp: {fileID: 1541904780966469056}
+  exp: {fileID: 0}
 --- !u!1001 &7185555407120930676
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using MoreMountains.Tools;
+using MoreMountains.CorgiEngine;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -20,39 +21,32 @@ public class ExperienceBar : MonoBehaviour
     protected virtual void Initialization()
     {
         _progressBar = GetComponent<MMProgressBar>();
-        exp = GetComponent<Experience>();
+
+        tryConnectPlayer();
     }
 
     protected virtual void Update()
     {
+        tryConnectPlayer();
+
+        if (exp == null)
+        {
+            return;
+        }
+
         // Debug.Log("XP: " + exp.getXp() + " / " + exp.getNextXp());
         _progressBar.UpdateBar(exp.getXp(), 0, exp.getNextXp());
     }
-}
 
-#if UNITY_EDITOR
-[CustomEditor(typeof(ExperienceBar))]
-[CanEditMultipleObjects]
-public class ExperienceBarEditor : Editor
-{
-    public override void OnInspectorGUI()
+    protected void tryConnectPlayer()
     {
-        DrawDefaultInspector();
-
-        ExperienceBar myScript = (ExperienceBar)target;
-        if (GUILayout.Button("Add EXP"))
+        if (exp == null)
         {
-            myScript.exp.adjustXp(100);
-
-            if (!Application.isPlaying)
+            Character player = Utils.getPlayerByID("Player1");
+            if (player != null)
             {
-                Utils.markDirty(myScript.exp);
-
-                // Register an undo as well
-                Undo.RecordObject(myScript.exp, "Add EXP");
-                serializedObject.ApplyModifiedProperties(); // Not really sure what this does...
+                exp = player.GetComponentInChildren<Experience>();
             }
         }
     }
 }
-#endif
