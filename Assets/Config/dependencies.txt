@@ -6,5 +6,6 @@ MMData (ext, bundled with CorgiEngine)
 LeanTween (ext)
 TMPro (ext)
 SBLS (ext)
+VSCode (ext)
 
 Install order: CorgiEngine -> The rest -> Config

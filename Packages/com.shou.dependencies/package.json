@@ -1,0 +1,12 @@
+{
+    "name": "com.shou.dependencies",
+    "version": "0.0.1",
+    "displayName": "Dependencies",
+    "description": "This is the package template",
+    "unity": "2022.3",
+    "author": {
+      "name": "Hanzen",
+      "email": "shouhanzen@gmail.com",
+      "url": "https://www.google.com"
+    }
+  }

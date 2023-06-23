@@ -1,15 +1,24 @@
 using UnityEngine;
+using MoreMountains.Tools;
+using MoreMountains.CorgiEngine;
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
-public class Experience : MonoBehaviour
+public class Experience : MonoBehaviour, MMEventListener<MMDamageTakenEvent>
 {
 
     public int xp = 0;
     public int nextXp = 100;
+    public int initialNextXp = 100;
     public int level = 1;
+
+    public Character character;
+
+    private void Start() {
+        nextXp = initialNextXp;
+    }
 
     public void adjustXp(int amount)
     {
@@ -19,6 +28,9 @@ public class Experience : MonoBehaviour
             level++;
             xp -= nextXp;
             nextXp = (int)(nextXp * 1.5f);
+
+            // Broadcast event
+            MMEventManager.TriggerEvent(new MMCharacterEvent(character, MMCharacterEventTypes.LevelUp, MMCharacterEvent.Moments.OneTime));
         }
     }
 
@@ -37,6 +49,35 @@ public class Experience : MonoBehaviour
         return level;
     }
 
+    private void OnEnable() {
+        this.MMEventStartListening<MMDamageTakenEvent>();
+    }
+
+    private void OnDisable() {
+        this.MMEventStopListening<MMDamageTakenEvent>();
+    }
+
+    public void OnMMEvent(MMDamageTakenEvent eventType)
+    {
+        Debug.Log(eventType.Instigator.name + " caused " + eventType.DamageCaused + " damage to " + eventType.AffectedHealth.name + " which now has " + eventType.CurrentHealth + " health.");
+
+        if (eventType.CurrentHealth <= 0)
+        {
+            // Find the Grant Experience component in a child and add the appropriate amount of XP
+            GrantExperience grantExperience = eventType.AffectedHealth.GetComponentInChildren<GrantExperience>();
+
+            if (grantExperience != null)
+            {
+                adjustXp(grantExperience.quant);
+
+                Debug.Log("You now have " + xp + " XP.");
+            }
+        }
+    }
+
+    private void Reset() {
+        character = GetComponent<Character>();
+    }
 }
 
 #if UNITY_EDITOR
