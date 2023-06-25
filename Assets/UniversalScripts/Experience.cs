@@ -59,7 +59,7 @@ public class Experience : MonoBehaviour, MMEventListener<MMDamageTakenEvent>
 
     public void OnMMEvent(MMDamageTakenEvent eventType)
     {
-        Debug.Log(eventType.Instigator.name + " caused " + eventType.DamageCaused + " damage to " + eventType.AffectedHealth.name + " which now has " + eventType.CurrentHealth + " health.");
+        // Debug.Log(eventType.Instigator.name + " caused " + eventType.DamageCaused + " damage to " + eventType.AffectedHealth.name + " which now has " + eventType.CurrentHealth + " health.");
 
         if (eventType.CurrentHealth <= 0)
         {
@@ -70,7 +70,7 @@ public class Experience : MonoBehaviour, MMEventListener<MMDamageTakenEvent>
             {
                 adjustXp(grantExperience.quant);
 
-                Debug.Log("You now have " + xp + " XP.");
+                // Debug.Log("You now have " + xp + " XP.");
             }
         }
     }

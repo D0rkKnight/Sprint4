@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2184558389050776913}
+  - component: {fileID: 9176431270276681264}
   m_Layer: 0
   m_Name: DifficultyManager
   m_TagString: Untagged
@@ -31,6 +32,24 @@ Transform:
   m_Father: {fileID: 5006691573896230558}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9176431270276681264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6634173368634390974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d639a0f6c1c0634a817dbf484eaef93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutomaticallyUnparentOnAwake: 1
+  difficulty: 0
+  pinToCharLevel: 1
+  enemyPrefabs:
+  - {fileID: 144022, guid: c22f3f66e79eb0348ac2c6a35909daa2, type: 3}
+  - {fileID: 9049098661202758758, guid: 248a38572330be24788a02d82b95477e, type: 3}
 --- !u!1 &8800109250415642215
 GameObject:
   m_ObjectHideFlags: 0

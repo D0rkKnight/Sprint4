@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1100677690281253620}
   - component: {fileID: 264030262265220335}
-  - component: {fileID: 4960266183272702825}
+  - component: {fileID: 1055929864970406154}
+  - component: {fileID: 7884616471320841740}
   m_Layer: 0
   m_Name: SpawnGate
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   - {fileID: 1100677691320202269}
   - {fileID: 5927754375969887147}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &264030262265220335
 MonoBehaviour:
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinFrequency: 4
   MaxFrequency: 4
---- !u!114 &4960266183272702825
+--- !u!114 &1055929864970406154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,15 +59,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100677690281253621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7277539b95c0d45895792ecc99ce66, type: 3}
+  m_Script: {fileID: 11500000, guid: 73098ca8f002adc4f9debdbe47a78c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MutualizeWaitingPools: 0
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 144022, guid: c22f3f66e79eb0348ac2c6a35909daa2, type: 3}
-  PoolSize: 3
-  PoolCanExpand: 0
+  Pool: []
+  PoolingMethod: 3
+  CanPoolSameObjectTwice: 1
+  MutualizedPoolName: 
+--- !u!114 &7884616471320841740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100677690281253621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2732574d9fe24af47837ffae4be74a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooler: {fileID: 1055929864970406154}
+  spawnMax: 3
 --- !u!1 &1100677691320202270
 GameObject:
   m_ObjectHideFlags: 0
