@@ -22,8 +22,6 @@ public class LevelUpCounter : MonoBehaviour, MMEventListener<MMCharacterEvent>
             // Get Experience component from child object
             Experience experience = eventType.TargetCharacter.GetComponentInChildren<Experience>();
 
-            Debug.Log("Level up! Level: " + experience.getLevel() + ", XP: " + experience.getXp() + ", Next XP: " + experience.getNextXp());
-
             if (levelUpText != null)
             {
                 levelUpText.text = "Lvl. " + (experience.getLevel() + 1);

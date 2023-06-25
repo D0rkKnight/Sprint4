@@ -7,15 +7,27 @@ using UnityEditor;
 public class BannerPopup : MonoBehaviour {
     
     public Animator anim;
+
+    public float lifetime = 2f;
+    public bool open = false;
+    float closeAt = 0f;
+
+
     void Reset() {
         anim = GetComponent<Animator>();
     }
 
-    public void Open() {
-        if (anim != null) {
-            anim.SetTrigger("Play");
-            anim.SetBool("Test", true);
+    void Update() {
+        anim.SetBool("Open", open);
+        
+        if (open && Time.time > closeAt) {
+            open = false;
         }
+    }
+
+    public void Open() {
+        open = true;
+        closeAt = Time.time + lifetime;
     }
 
 }
