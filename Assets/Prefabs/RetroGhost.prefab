@@ -1016,7 +1016,7 @@ MonoBehaviour:
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
   BrainActive: 1
   ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
+  ResetBrainOnEnable: 1
   ActionsFrequency: 0
   DecisionFrequency: 0
   RandomizeFrequencies: 0

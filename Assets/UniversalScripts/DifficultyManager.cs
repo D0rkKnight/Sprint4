@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
@@ -26,11 +27,12 @@ public class DifficultyManager : MMPersistentSingleton<DifficultyManager>, MMEve
 
     public void SetDifficulty(int difficulty) {
         this.difficulty = difficulty;
+        GameObject enemyPrefab = enemyPrefabs[Math.Clamp(difficulty, 0, enemyPrefabs.Length - 1)];
 
-        Debug.Log("Difficulty set to " + difficulty);
+        // Debug.Log("Difficulty set to " + difficulty);
 
         // Send and MMEvent for the new difficulty profile
-        MMEventManager.TriggerEvent(new DifficultyProfileEvent(difficulty, enemyPrefabs[difficulty]));
+        MMEventManager.TriggerEvent(new DifficultyProfileEvent(difficulty, enemyPrefab));
     }
 }
 
