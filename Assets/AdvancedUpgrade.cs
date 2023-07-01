@@ -11,12 +11,16 @@ public class AdvancedUpgrade : ScriptableObject, IGenerableToGObj {
 
     public GameObject entryPrefab;
 
+    public string tooltipDescription = "This is a tooltip";
+
     public GameObject generateEntryObj() {
         GameObject entry = Instantiate(entryPrefab);
         ClickerUpgradeButton upgradeBut = entry.GetComponent<ClickerUpgradeButton>();
         
         upgradeBut.upgrade = upgrade;
         upgradeBut.icon.sprite = icon;
+        upgradeBut.tooltip.TooltipMessage = tooltipDescription;
+        
         return entry;
     }
 

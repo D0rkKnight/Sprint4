@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgrade: {fileID: 0}
   icon: {fileID: 5851854809675096136}
+  tooltip: {fileID: 3120867370313446754}
 --- !u!1 &2252369117656286868
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +286,7 @@ GameObject:
   - component: {fileID: 5842414379629592190}
   - component: {fileID: 7893823687132979237}
   - component: {fileID: 1138356579242573761}
+  - component: {fileID: 3120867370313446754}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -350,3 +352,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3120867370313446754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7576308855172474091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a079c803e14eecb7ea9cf47c7b1ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TooltipMessage: Tooltip!
+  Disabled: 0
+  _focused: 0
+  HoverDelay: 0

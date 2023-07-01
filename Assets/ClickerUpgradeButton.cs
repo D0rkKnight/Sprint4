@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 using uClicker;
 using MoreMountains.Tools;
+using TwoPm.TooltipDemo;
 
 public class ClickerUpgradeButton : MonoBehaviour
 {
     public Upgrade upgrade;
 
     public Image icon;
+    public ReactToPointer tooltip;
 
     // Start is called before the first frame update
     void Start()

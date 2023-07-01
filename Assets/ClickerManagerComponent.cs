@@ -10,6 +10,8 @@ public class ClickerManagerComponent : MMPersistentSingleton<ClickerManagerCompo
 
     public ClickerManager clickerManager;
 
+    public GameObject debugObj;
+
     // Start is called before the first frame update
     void Start()
     {

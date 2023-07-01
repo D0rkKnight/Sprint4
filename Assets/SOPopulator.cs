@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SOPopulator : MonoBehaviour
@@ -16,6 +15,7 @@ public class SOPopulator : MonoBehaviour
                 entry.transform.SetParent(parent);
             }
         }
+
     }
 
     // Update is called once per frame
@@ -23,10 +23,4 @@ public class SOPopulator : MonoBehaviour
     {
         
     }
-}
-
-// SO for generable manifest
-[CreateAssetMenu(fileName = "SOManifest", menuName = "Sprint4/SOManifest", order = 0)]
-public class SOManifest : ScriptableObject {
-    public List<ScriptableObject> items;
 }

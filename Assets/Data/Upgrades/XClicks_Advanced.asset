@@ -17,3 +17,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 663a79f194b91454aa36d58ffb23feb0, type: 3}
   entryPrefab: {fileID: 2098276144208009526, guid: f8430761cb406f74c90ec413b86e0c94,
     type: 3}
+  tooltipDescription: Doubles click power
