@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bce172859a09141b78f0d974867538, type: 3}
+  m_Name: XClicks_Advanced
+  m_EditorClassIdentifier: 
+  upgrade: {fileID: 11400000, guid: 829f42c8e7620ce4f81c967639c120fb, type: 2}
+  displayName: XClicks
+  icon: {fileID: 21300000, guid: 663a79f194b91454aa36d58ffb23feb0, type: 3}
+  entryPrefab: {fileID: 2098276144208009526, guid: f8430761cb406f74c90ec413b86e0c94,
+    type: 3}

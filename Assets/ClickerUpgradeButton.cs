@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 using uClicker;
 using MoreMountains.Tools;
@@ -8,6 +9,8 @@ using MoreMountains.Tools;
 public class ClickerUpgradeButton : MonoBehaviour
 {
     public Upgrade upgrade;
+
+    public Image icon;
 
     // Start is called before the first frame update
     void Start()
