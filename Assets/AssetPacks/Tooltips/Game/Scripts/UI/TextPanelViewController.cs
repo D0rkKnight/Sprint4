@@ -41,7 +41,7 @@ namespace TwoPm.TooltipDemo {
 
         // Update is called once per frame
         void Update() {
-            Image.rectTransform.sizeDelta = new Vector2(Text.renderedWidth + Padding, 30);
+            Image.rectTransform.sizeDelta = new Vector2(Text.renderedWidth + Padding, Text.renderedHeight + Padding );
 
             if (Center) {
                 var sizeDiff = Image.rectTransform.sizeDelta - _initialSize;
