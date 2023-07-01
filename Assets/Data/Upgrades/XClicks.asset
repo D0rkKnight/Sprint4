@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GUIDContainer:
     _serializedGuid: 5689ff3d-1461-4bf1-a228-dc8db7d532a5
-  Unlocked: 0
+  Unlocked: 1
   RequirementGroups: []
   Cost:
-    Currency: {fileID: 0}
-    Amount: 0
+    Currency: {fileID: 11400000, guid: 3df28c9e7a4fc994aa5a479c93305c25, type: 2}
+    Amount: 10
   UpgradePerk:
   - Type: 2
     TargetBuilding: {fileID: 0}
