@@ -19,6 +19,7 @@ public class ClickerResourceCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = ClickerManagerComponent.Instance.clickerManager.State.CurrencyCurrentTotals[currency].ToString();
+        double txt = ClickerManagerComponent.Instance.clickerManager.State.CurrencyCurrentTotals[currency];
+        text.text = BigNumberFormatter.Format(txt);
     }
 }

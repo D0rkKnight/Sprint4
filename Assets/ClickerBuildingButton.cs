@@ -9,8 +9,8 @@ using TMPro;
 [RequireComponent(typeof(MMTouchButton))]
 public class ClickerBuildingButton : MonoBehaviour
 {
-
-    public AdvancedBuilding building;
+    [SerializeField]
+    AdvancedBuilding building;
     public TMP_Text buildingNameLabel;
     public TMP_Text buildingCostLabel;
     public TMP_Text buildingCountLabel;
@@ -26,7 +26,8 @@ public class ClickerBuildingButton : MonoBehaviour
     void Update()
     {
         buildingNameLabel.text = building.buildingName;
-        buildingCostLabel.text = ClickerManagerComponent.Instance.clickerManager.BuildingCost(building.building).ToString();
+        // buildingCostLabel.text = ClickerManagerComponent.Instance.clickerManager.BuildingCost(building.building).ToString();
+        buildingCostLabel.text = BigNumberFormatter.Format(ClickerManagerComponent.Instance.clickerManager.BuildingCost(building.building).Amount);
 
         int earned = 0;
         if (ClickerManagerComponent.Instance.clickerManager.State.EarnedBuildings.ContainsKey(building.building))
@@ -44,5 +45,10 @@ public class ClickerBuildingButton : MonoBehaviour
 
             Debug.Log("Building purchased");
         }
+    }
+
+    public void SetBuilding(AdvancedBuilding building)
+    {
+        this.building = building;
     }
 }
