@@ -42,6 +42,10 @@ public class SOManifestEditor : UnityEditor.Editor
 
                 manifest.items.Add(so);
             }
+
+            // Save manifest
+            EditorUtility.SetDirty(manifest);
+            AssetDatabase.SaveAssets();
         }
 
         // Clear manifest button

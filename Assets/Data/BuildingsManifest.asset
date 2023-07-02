@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6680d68049227044f8b0834e57fd737a, type: 3}
   m_Name: BuildingsManifest
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 11400000, guid: a9a1ff43bbdc84e4a8339e93898566f6, type: 2}
+  - {fileID: 11400000, guid: e116a2e10ee5b704aa990e92b1009b5c, type: 2}
+  - {fileID: 11400000, guid: 54ba0d0c3874ef44881028a44ae65f1a, type: 2}
+  - {fileID: 11400000, guid: 9855f3488a9b7eb44ada0ae539c3c816, type: 2}
+  - {fileID: 11400000, guid: 89bb00cf8a7c6f74ea408fe53e50c0c2, type: 2}
