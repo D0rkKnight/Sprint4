@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f223d3357adc044a260dee7eb55ca7, type: 3}
+  m_Name: BiscuitBakeryX2_2
+  m_EditorClassIdentifier: 
+  GUIDContainer:
+    _serializedGuid: 50bb7d52-fe32-4fff-8322-5a880c7b6f4d
+  Unlocked: 1
+  RequirementGroups: []
+  Cost:
+    Currency: {fileID: 11400000, guid: 3df28c9e7a4fc994aa5a479c93305c25, type: 2}
+    Amount: 7000000
+  UpgradePerk:
+  - Type: 1
+    TargetBuilding: {fileID: 11400000, guid: 54ba0d0c3874ef44881028a44ae65f1a, type: 2}
+    TargetClickable: {fileID: 0}
+    TargetCurrency: {fileID: 0}
+    Operation: 1
+    Amount: 2
+  displayName: BiscuitBakery X2
+  icon: {fileID: 21300000, guid: df6b34c8b502f7e48a79565096a23132, type: 3}
+  entryPrefab: {fileID: 2098276144208009526, guid: f8430761cb406f74c90ec413b86e0c94,
+    type: 3}
+  tooltipDescription: This is a tooltip

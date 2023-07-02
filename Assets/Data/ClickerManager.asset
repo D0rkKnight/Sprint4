@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7abe32ad68c414b4b86ec2f9a66932e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 64576ce36d9fcbc4ab92cde1600613a2, type: 3}
   m_Name: ClickerManager
   m_EditorClassIdentifier: 
   GUIDContainer:
@@ -23,19 +23,23 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3df28c9e7a4fc994aa5a479c93305c25, type: 2}
     Clickables:
     - {fileID: 11400000, guid: 097ee09d95847c44f9f9fc4858109396, type: 2}
-    AvailableBuildings: []
-    AvailableUpgrades: []
+    AvailableBuildings:
+    - {fileID: 11400000, guid: e116a2e10ee5b704aa990e92b1009b5c, type: 2}
+    - {fileID: 11400000, guid: 9855f3488a9b7eb44ada0ae539c3c816, type: 2}
+    - {fileID: 11400000, guid: 89bb00cf8a7c6f74ea408fe53e50c0c2, type: 2}
+    - {fileID: 11400000, guid: 54ba0d0c3874ef44881028a44ae65f1a, type: 2}
+    - {fileID: 11400000, guid: a9a1ff43bbdc84e4a8339e93898566f6, type: 2}
+    AvailableUpgrades:
+    - {fileID: 11400000, guid: 1e0d835de43bcc24cb064bbf122a487f, type: 2}
+    - {fileID: 11400000, guid: 829f42c8e7620ce4f81c967639c120fb, type: 2}
     BuildingCostIncrease: 0.15
   State:
     _earnedBuildings: []
     _earnedBuildingsCount: 
     _earnedUpgrades: []
-    _currencies:
-    - _serializedGuid: bfaf084c-889f-4f97-8088-4fa6da7b8b43
-    _currencyCurrentTotals:
-    - 0
-    _currencyHistoricalTotals:
-    - 0
+    _currencies: []
+    _currencyCurrentTotals: []
+    _currencyHistoricalTotals: []
   OnTick:
     m_PersistentCalls:
       m_Calls: []

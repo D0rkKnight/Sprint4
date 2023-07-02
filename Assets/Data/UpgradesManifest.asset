@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: UpgradesManifest
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 11400000, guid: 814ec945c97c1694abde2b3e7619a0b5, type: 2}
-  - {fileID: 11400000, guid: f9d939d04a6a52d408b09b322ad631da, type: 2}
+  - {fileID: 11400000, guid: c443c02b38581df459a4968ebc9bc01a, type: 2}

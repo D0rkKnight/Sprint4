@@ -1,0 +1,22 @@
+{
+    "name": "uClicker.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7f2b963906fafef469cecb76a03e370b",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:6beab0bf0f222b74b868dbe4bcfa23cf",
+        "GUID:1dbcca72f42070548a895178556c5bc3",
+        "GUID:de5c49d32e0f4e945b282ab55b2c3146",
+        "GUID:4a1cb1490dc4df8409b2580d6b44e75e",
+        "GUID:1052b15434e010f41964b5734e7c9e0c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

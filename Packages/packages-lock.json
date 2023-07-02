@@ -258,13 +258,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.wwweh.uclicker": {
-      "version": "https://github.com/philipcass/uClicker.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "055b8168d8ecc73d3e270af815a3cbeef9060eb6"
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

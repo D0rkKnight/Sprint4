@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgrade: {fileID: 0}
+  bg: {fileID: 1138356579242573761}
   icon: {fileID: 5851854809675096136}
   tooltip: {fileID: 3120867370313446754}
 --- !u!1 &2252369117656286868
